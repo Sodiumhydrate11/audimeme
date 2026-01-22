@@ -1,0 +1,116 @@
+.explore {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.navbar-explore {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-explore h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.container-explore {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container-explore h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.audios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.audio-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.audio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.audio-header {
+  margin-bottom: 15px;
+}
+
+.audio-header h3 {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  word-break: break-word;
+}
+
+.artist {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.audio-desc {
+  font-size: 14px;
+  margin: 15px 0;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.audio-card audio {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.audio-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.btn-whatsapp {
+  width: 100%;
+  padding: 12px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20ba5a;
+}
+
+@media (max-width: 768px) {
+  .audios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-explore h1 {
+    font-size: 22px;
+  }
+}
