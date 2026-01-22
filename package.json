@@ -1,0 +1,21 @@
+{
+  "name": "audimeme",
+  "version": "1.0.0",
+  "description": "Audio recording and sharing app with WhatsApp integration",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start"
+  },
+  "keywords": [
+    "audio",
+    "recording",
+    "whatsapp",
+    "sharing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
